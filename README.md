@@ -1,8 +1,8 @@
 ## Set of exercises to understand [Android](https://developer.android.com) development
 
-   - [Courses](#courses)
-   - [Additional useful tools](#tools)
-   - [How-tos](#how-tos)
+   - [Courses](/#courses)
+   - [Additional useful tools](/#tools)
+   - [How-tos](/#how-tos)
 
 ---
 ### <a name="courses" />Courses
