@@ -50,26 +50,27 @@ Additional free online video courses:
 ### <a name="tools" />Additional useful tools
 
 Additional useful tools everybody Android developer should know about:
-* [Vocabulary Glossary](https://developers.google.com/android/for-all/vocab-words)<br/>
-  This glossary of Android and Java vocab words supplements the
-  [Udacity Android for Beginners course](https://www.udacity.com/course/android-basics-user-interface--ud834).
-  This course is targeted at those who are new to programming but want to start building Android apps.
-
-* Build high-quality digital experiences using [Material Design](https://material.io).
-  Material is an adaptable system of guidelines, components, and tools that support the best practices
-  of user interface design. Backed by open-source code, Material streamlines collaboration between
-  designers and developers, and helps teams quickly build beautiful products.
-  Also find more at a directory of [essential design tools and resources](https://design.google/resources)
-  to keep your projects moving forward.
-
+   * [Vocabulary Glossary](https://developers.google.com/android/for-all/vocab-words)<br/>
+     This glossary of Android and Java vocab words supplements the
+     [Udacity Android for Beginners course](https://www.udacity.com/course/android-basics-user-interface--ud834).
+     This course is targeted at those who are new to programming but want to start building Android apps.
+     <br/>
+   * Build high-quality digital experiences using [Material Design](https://material.io).
+     Material is an adaptable system of guidelines, components, and tools that support the best practices
+     of user interface design. Backed by open-source code, Material streamlines collaboration between
+     designers and developers, and helps teams quickly build beautiful products.
+     Also find more at a directory of [essential design tools and resources](https://design.google/resources)
+     to keep your projects moving forward.
+     <br/>
    * [XML Layout Code](https://labs.udacity.com/android-visualizer) is a simple online Android visualizer.
-
+     <br/>
    * [Take a screenshot](https://developer.android.com/studio/debug/am-screenshot.html)
      with your cell phone and Android Studio IDE.
-
+     <br/>
    * [Google Developers Codelabs](https://codelabs.developers.google.com) provide a guided, tutorial,
      hands-on coding experience. Most codelabs will step you through the process of building
      a small application, or adding a new feature to an existing application.
+     <br/>
 
 ---
 ### <a name="how-tos" />How-tos
