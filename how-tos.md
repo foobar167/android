@@ -20,4 +20,3 @@ You can turn on this functionality with the `core.autocrlf` setting.
 ```shell script
 git config core.autocrlf true
 ```
-
