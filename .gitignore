@@ -1,0 +1,8 @@
+# Directories to ignore for GIT
+**/.idea
+**/temp
+**/.ipynb_checkpoints
+
+# Files to ignore for GIT
+**/*.tmp
+**/*.pyc
