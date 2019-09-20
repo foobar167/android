@@ -55,7 +55,7 @@ Additional useful tools everybody Android developer should know about:
      [Udacity Android for Beginners course](https://www.udacity.com/course/android-basics-user-interface--ud834).
      This course is targeted at those who are new to programming but want to start building Android apps.
      <br/><br/>
-   * Build high-quality digital experiences using [Material Design](https://material.io).
+   * Build high-quality digital experiences using [Material Design](https://material.io/design).
      Material is an adaptable system of guidelines, components, and tools that support the best practices
      of user interface design. Backed by open-source code, Material streamlines collaboration between
      designers and developers, and helps teams quickly build beautiful products.

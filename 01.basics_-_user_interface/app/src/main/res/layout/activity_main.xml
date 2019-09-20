@@ -26,10 +26,7 @@
         app:fontFamily="cursive"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:paddingTop="@dimen/vertical_margin"
-        android:paddingBottom="@dimen/vertical_margin"
-        android:paddingLeft="@dimen/horizontal_margin"
-        android:paddingRight="@dimen/horizontal_margin" />
+        android:layout_margin="@dimen/text_margin" />
 
     <TextView
         android:layout_width="match_parent"
@@ -42,9 +39,6 @@
         app:fontFamily="cursive"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        android:paddingTop="@dimen/vertical_margin"
-        android:paddingBottom="@dimen/vertical_margin"
-        android:paddingLeft="@dimen/horizontal_margin"
-        android:paddingRight="@dimen/horizontal_margin" />
+        android:layout_margin="@dimen/text_margin" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
