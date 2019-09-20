@@ -11,7 +11,7 @@ At first it is useful to find appropriate video course.
 You can review a list of online courses at
 [Class Central. Android Development](https://www.classcentral.com/subject/android-development)
 
-I choosed some Google courses:
+I selected some Google courses:
    01. [Android Basics: User Interface](https://www.udacity.com/course/android-basics-user-interface--ud834)<br/>
        The course may seem too simple. However, do not rush to move on to more advanced courses.
        Try to understand the basic concepts and vocabulary slang used in the development of Android (lessons 1, 2).
@@ -70,6 +70,9 @@ Additional useful tools everybody Android developer should know about:
    * [Google Developers Codelabs](https://codelabs.developers.google.com) provide a guided, tutorial,
      hands-on coding experience. Most codelabs will step you through the process of building
      a small application, or adding a new feature to an existing application.
+     <br/><br/>
+   * [Common Android View Cheat Sheet PDF](https://drive.google.com/file/d/0B5XIkMkayHgRMVljUVIyZzNmQUU)
+     will help you to start editing Common Android Views.
      <br/><br/>
 
 ---

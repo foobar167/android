@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="size_large">256sp</dimen>
+    <dimen name="size_medium">128sp</dimen>
+    <dimen name="size_small">64sp</dimen>
+    <dimen name="horizontal_margin">8dp</dimen>
+    <dimen name="vertical_margin">8dp</dimen>
+</resources>
