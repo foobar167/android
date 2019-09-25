@@ -16,9 +16,12 @@ I selected some Google courses:
        The course may seem too simple. However, do not rush to move on to more advanced courses.
        Try to understand the basic concepts and vocabulary slang used in the development of Android (lessons 1, 2).
        Install Android Studio (lesson 3), create your first project for Android Studio IDE and make some basics GUI.
-       The source code with examples is in the [01.basics_-_user_interface](01.basics_-_user_interface) directory.
+       <br/>The source code with examples is in the [01.basics_-_user_interface](01.basics_-_user_interface) directory.
 
    02. [Android Basics: User Input](https://www.udacity.com/course/android-basics-user-input--ud836)<br/>
+       By the end of this course, you’ll be able to make an Android app with buttons and text fields
+       that a user can interact with. This Java app allows user to fill out a form to order coffee.
+       <br/>The source code with examples is in the [02.basics_-_user_input](02.basics_-_user_input) directory.
 
    03. [Android Basics: Multiscreen Apps](https://www.udacity.com/course/android-basics-multiscreen-apps--ud839)<br/>
 
