@@ -43,6 +43,7 @@
         android:layout_marginTop="16dp"
         android:text="@string/order"
         android:textAllCaps="true"
+        android:onClick="submitOrder"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@id/text_number" />
 
