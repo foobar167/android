@@ -11,7 +11,7 @@ At first it is useful to find appropriate video course.
 You can review a list of online courses at
 [Class Central. Android Development](https://www.classcentral.com/subject/android-development)
 
-I selected some Google courses:
+I selected some Google courses. Each course is in a separate catalog and designed as an independent project:
    01. [Android Basics: User Interface](https://www.udacity.com/course/android-basics-user-interface--ud834)<br/>
        The course may seem too simple. However, do not rush to move on to more advanced courses.
        Try to understand the basic concepts and vocabulary slang used in the development of Android (lessons 1, 2).
