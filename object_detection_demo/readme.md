@@ -8,3 +8,11 @@ There are 2 main components:
        Google Colab `*.ipynb` script to train an object detection model.
    02. [mobile app](02_mobile_app) -
        a mobile application that uses a trained model in Android.
+
+[Take existing]() or [train your own]() model using training scripts.
+Save your model to the Google Drive.
+Get downloadable direct link using direct link generator for
+[Google Drive](https://www.wonderplugin.com/online-tools/google-drive-direct-link-generator),
+[Dropbox or Onedrive](https://syncwithtech.blogspot.com/p/direct-download-link-generator.html).
+Replace link in the mobile app `???` file on your link.
+Run mobile app in Android Studio and enjoy!
