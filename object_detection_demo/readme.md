@@ -12,7 +12,8 @@ There are 2 main components:
           * [`demo_2.ipynb`](https://colab.research.google.com/drive/1sKb5rXrwiJTxzk0jZxAmpfIYUg0gj4Bw)
        describes the process of creating your own dataset and training (transfer learning) a new model.
    02. [mobile app](02_mobile_app) -
-       a mobile application that uses model in Android.
+       a mobile application that uses trained model in Android. It was copied from
+       [TensorFlow Lite object detection Android Demo](https://github.com/tensorflow/examples/tree/master/lite/examples/object_detection/android).
 
 To run model on your mobile phone:
    * Take existing pre-trained model from the
