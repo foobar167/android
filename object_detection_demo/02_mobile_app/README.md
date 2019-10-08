@@ -44,7 +44,7 @@ You may need to rebuild the project using `Build > Rebuild Project`.
 Downloading, extraction and placing it in assets folder has been managed automatically
 by download.gradle.
 
-If you explicitly want to download the model, you can download from
+If you explicitly want to download the model, you can download it from
 [here](https://drive.google.com/uc?export=download&id=1KQwgC5k0I9qggCFbBRDhl8MrQ0hWwthj).
 Extract the zip to get the `.tflite` and `label` file.
 
@@ -52,3 +52,11 @@ Extract the zip to get the `.tflite` and `label` file.
 _Please do not delete the assets folder content_.
 If you explicitly deleted the files, then please choose
 `Build -> Rebuild` from menu to re-download the deleted model files into assets folder.
+
+## Use your own model
+To use your own model:
+   * get downloadable link on your model from [training scripts](../01_training_script/);
+   * replace the link in [`download_model.gradle`](app/download_model.gradle) file:
+     ![Replace the link](data/2019.10.08_replace_the_link.jpg)
+   * Sync the Gradle and run the project `Run --> Run 'app'` from the menu.
+

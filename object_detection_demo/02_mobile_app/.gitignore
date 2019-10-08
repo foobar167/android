@@ -12,3 +12,6 @@
 /.gradle/
 /.idea/
 detect.tflite
+
+# Ignore model directory
+fine_tuned_model/
