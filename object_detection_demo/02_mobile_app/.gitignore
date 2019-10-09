@@ -5,13 +5,12 @@
 /.idea/modules.xml
 /.idea/workspace.xml
 .DS_Store
-/build
 /captures
 .externalNativeBuild
 
-/.gradle/
-/.idea/
-detect.tflite
+**/.gradle/
+**/.idea/
+**/build/
 
-# Ignore model directory
-fine_tuned_model/
+# Ignore assets directory
+**/assets/
