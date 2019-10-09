@@ -5,6 +5,11 @@
    - [How-tos](#how-tos)
    - [Object detection demo](#object_detection_demo)
 
+<!-- for unfinished projects
+![Under construction](data/2019.09.25-under-construction-icon.png)
+**Under construction...**
+-->
+
 ---
 ### <a name="courses" />Courses
 
@@ -25,6 +30,9 @@ I selected some Google courses. Each course is in a separate catalog and designe
        By the end of this course, you’ll be able to make an Android app with buttons and text fields
        that a user can interact with. This Java app allows user to fill out a form to order coffee.
        <br/>The source code with examples is in the [02.basics_-_user_input](02.basics_-_user_input) directory.
+
+       ![Under construction](data/2019.09.25-under-construction-icon.png)
+       **Under construction...**
 
    03. [Android Basics: Multiscreen Apps](https://www.udacity.com/course/android-basics-multiscreen-apps--ud839)<br/>
 
@@ -88,15 +96,5 @@ Additional useful tools everybody Android developer should know about:
 
 ---
 ### <a name="object_detection_demo" />[Object detection demo](object_detection_demo)
-To run model on your mobile phone:
-   * Take existing pre-trained model from the
-     [model zoo](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/detection_model_zoo.md),
-     test it with [`demo_1.ipynb`](https://colab.research.google.com/drive/1OkqFXb1GSxi7oNkiGfGttSmhaob4ivFy) script
-     or train your own model on a new dataset
-     ([`demo_2.ipynb`](https://colab.research.google.com/drive/1sKb5rXrwiJTxzk0jZxAmpfIYUg0gj4Bw)).
-   * Save the file with your model to the Google Drive.
-   * Get downloadable direct link using direct link generator for
-     [Google Drive](https://www.wonderplugin.com/online-tools/google-drive-direct-link-generator),
-     [Dropbox or Onedrive](https://syncwithtech.blogspot.com/p/direct-download-link-generator.html).
-   * Replace link in the mobile app `???` file on your link.
-   * Run mobile app in Android Studio and enjoy!
+![Under construction](data/2019.09.25-under-construction-icon.png)
+**Under construction...**

@@ -1,4 +1,6 @@
 # TensorFlow Lite Object Detection Android Demo
+![Under construction](../../data/2019.09.25-under-construction-icon.png)
+**Under construction...**
 
 ## Overview
 This is a camera app that continuously detects the objects (bounding boxes and classes)

@@ -1,4 +1,7 @@
 ### Detect objects with TensorFlow Object Detection API.
+![Under construction](../data/2019.09.25-under-construction-icon.png)
+**Under construction...**
+
 The [TensorFlow Object Detection API](https://github.com/tensorflow/models/tree/master/research/object_detection)
 is an open source framework built on top of TensorFlow that makes it easy to construct,
 train and deploy **object detection** models.
