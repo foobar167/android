@@ -1,7 +1,7 @@
 
 task downloadZipFile(type: Download) {
     // Place your downloadable link to the model file here
-    //src 'https://drive.google.com/uc?export=download&id=1KQwgC5k0I9qggCFbBRDhl8MrQ0hWwthj'
+    // src 'https://drive.google.com/uc?export=download&id=1KQwgC5k0I9qggCFbBRDhl8MrQ0hWwthj'
     src 'http://storage.googleapis.com/download.tensorflow.org/models/tflite/coco_ssd_mobilenet_v1_1.0_quant_2018_06_29.zip'
     dest new File(buildDir, 'model-file')
     overwrite true

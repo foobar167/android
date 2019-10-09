@@ -1,16 +1,52 @@
-*.iml
-.gradle
-/local.properties
-/.idea/libraries
-/.idea/modules.xml
-/.idea/workspace.xml
-.DS_Store
-/captures
-.externalNativeBuild
+### -------------- Directories to ignore for GIT
 
+# Directories with Gradle and project build files
 **/.gradle/
-**/.idea/
 **/build/
+
+# Directory with IntelliJ files
+**/.idea/
+
+# Directory with Android Studio files
+**/.DS_Store/
 
 # Ignore assets directory
 **/assets/
+
+# Directories with temp and IPYNB temp files
+**/temp/
+**/.ipynb_checkpoints/
+
+# Some temp dirs I don't know
+/local.properties
+/captures
+
+### -------------- Files to ignore for GIT
+
+# Java class files
+*.class
+
+# Python files
+*.pyc
+
+# Temp files
+*.tmp
+
+# Built application files
+*.apk
+*.ap_
+
+# Log Files
+*.log
+
+# Ignore created packages dependences
+.packages
+
+# Config file to add Firebase to your Android app
+google-services.json
+
+# IntelliJ files
+*.iml
+
+# Configures external native build using CMake or ndk-build
+.externalNativeBuild
