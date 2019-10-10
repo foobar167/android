@@ -32,6 +32,7 @@ To run model on your mobile phone:
    * Run mobile app in Android Studio and enjoy!
 
 Links:
+   * Article [Real-time face recognition](https://medium.com/@saidakbarp/real-time-face-recognition-tflite-3fb818ac039a)
    * Shareable link to file
      [`object_detection_demo_1.ipynb`](https://colab.research.google.com/drive/1OkqFXb1GSxi7oNkiGfGttSmhaob4ivFy).
      On GitHub `*.ipynb` documents usually do not open.
