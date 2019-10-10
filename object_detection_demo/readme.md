@@ -9,6 +9,8 @@ There are 2 main components:
           * [`demo_1.ipynb`](https://colab.research.google.com/drive/1OkqFXb1GSxi7oNkiGfGttSmhaob4ivFy)
             uses existing pre-trained model from the
             [model zoo](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/detection_model_zoo.md)
+            or the [list of pre-trained models](https://www.tensorflow.org/lite/guide/hosted_models#object_detection)
+            optimized to work with TensorFlow Lite.
           * [`demo_2.ipynb`](https://colab.research.google.com/drive/1sKb5rXrwiJTxzk0jZxAmpfIYUg0gj4Bw)
        describes the process of creating your own dataset and training (transfer learning) a new model.
    02. [mobile app](02_mobile_app) -
