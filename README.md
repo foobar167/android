@@ -96,7 +96,8 @@ Additional useful tools everybody Android developer should know about:
 
 ---
 ### <a name="object_detection_demo" />[Object detection demo](object_detection_demo)
-![Object detection](object_detection_demo/02_mobile_app/data/2019.10.10_object_detection.jpg)
+![Object detection](object_detection_demo/02_mobile_app/data/2019.10.10_object_detection-1.jpg)
+
 There are 2 main components:
    01. [model training scripts](object_detection_demo/01_training_script) - 
        Google Colab `*.ipynb` scripts to use an object detection API.
