@@ -12,8 +12,6 @@ You don't need to do any steps to download TFLite models into the project explic
 
 Application can run either on device or emulator.
 
-<!-- TODO(b/124116863): Add app screenshot. -->
-
 ## Build the demo using Android Studio
 
 ### Prerequisites
@@ -55,8 +53,25 @@ If you explicitly deleted the files, then please choose
 
 ## Use your own model
 To use your own model:
-   * get downloadable link on your model from [training scripts](../01_training_script/);
-   * replace the link in [`download_model.gradle`](app/download_model.gradle) file:
+   * Take existing pre-trained model from the
+     [model zoo](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/detection_model_zoo.md),
+     test it with [`demo_1.ipynb`](https://colab.research.google.com/drive/1OkqFXb1GSxi7oNkiGfGttSmhaob4ivFy) script
+     or train your own model on a new dataset
+     ([`demo_2.ipynb`](https://colab.research.google.com/drive/1sKb5rXrwiJTxzk0jZxAmpfIYUg0gj4Bw)).
+   * Create `*.tar.gz` or `*.zip` file from `detect.tflite` with your model and
+     `labelmap.txt` with your labels. Save `*.tar.gz` or `*.zip`  to the Google Drive.
+     **Note**: `labelmap.txt` file should start with `???` string, because zero position is reserved.
+     So your class labels will start from the 1st position after `???` string.
+   * Get downloadable direct link using direct link generator for
+     [Google Drive](https://www.wonderplugin.com/online-tools/google-drive-direct-link-generator),
+     [Dropbox or Onedrive](https://syncwithtech.blogspot.com/p/direct-download-link-generator.html).
+   * Replace link in the mobile app [`download_model.gradle`](app/download_model.gradle)
+     file on your link. Use `zipTree` for `*.zip` and `tarTree` for `*.tar.gz`.
      ![Replace the link](data/2019.10.08_replace_the_link.jpg)
-   * Sync the Gradle and run the project `Run --> Run 'app'` from the menu.
-
+   * Our model is not quantized, so set quantized to `false` in
+     [`DetectorActivity.java`](app/src/main/java/org/tensorflow/lite/examples/detection/DetectorActivity.java)
+     file
+     ![Set quantized to false](data/2019.10.10_replace_the_quantized.jpg)
+   * Delete `build` folder and clean `assets` folder.
+     Rebuild the project: `Build --> Make Project` then `Build --> Build Bundles --> Build APK`.
+   * Run mobile app (`Run --> Run 'app'`) in Android Studio and enjoy!

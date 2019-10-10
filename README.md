@@ -96,4 +96,15 @@ Additional useful tools everybody Android developer should know about:
 
 ---
 ### <a name="object_detection_demo" />[Object detection demo](object_detection_demo)
-
+![Object detection](object_detection_demo/02_mobile_app/data/2019.10.10_object_detection.jpg)
+There are 2 main components:
+   01. [model training scripts](object_detection_demo/01_training_script) - 
+       Google Colab `*.ipynb` scripts to use an object detection API.
+          * [`demo_1.ipynb`](https://colab.research.google.com/drive/1OkqFXb1GSxi7oNkiGfGttSmhaob4ivFy)
+            uses existing pre-trained model from the
+            [model zoo](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/detection_model_zoo.md)
+          * [`demo_2.ipynb`](https://colab.research.google.com/drive/1sKb5rXrwiJTxzk0jZxAmpfIYUg0gj4Bw)
+            describes the process of creating your own dataset and training (transfer learning) a new model.
+   02. [mobile app](02_mobile_app) -
+       a mobile application that uses trained model in Android. It was copied from
+       [TensorFlow Lite object detection Android Demo](https://github.com/tensorflow/examples/tree/master/lite/examples/object_detection/android).
