@@ -1,7 +1,4 @@
 ### Detect objects with TensorFlow Object Detection API.
-![Under construction](../data/2019.09.25-under-construction-icon.png)
-**Under construction...**
-
 The [TensorFlow Object Detection API](https://github.com/tensorflow/models/tree/master/research/object_detection)
 is an open source framework built on top of TensorFlow that makes it easy to construct,
 train and deploy **object detection** models.
@@ -24,20 +21,31 @@ To run model on your mobile phone:
      test it with [`demo_1.ipynb`](https://colab.research.google.com/drive/1OkqFXb1GSxi7oNkiGfGttSmhaob4ivFy) script
      or train your own model on a new dataset
      ([`demo_2.ipynb`](https://colab.research.google.com/drive/1sKb5rXrwiJTxzk0jZxAmpfIYUg0gj4Bw)).
-   * Save the file with your model to the Google Drive.
+   * Create `*.tar.gz` or `*.zip` file from `detect.tflite` with your model and
+     `labelmap.txt` with your labels. Save `*.tar.gz` or `*.zip`  to the Google Drive.
+     **Note**: `labelmap.txt` file should start with `???` string, because zero position is reserved.
+     So your class labels will start from the 1st position after `???` string.
    * Get downloadable direct link using direct link generator for
      [Google Drive](https://www.wonderplugin.com/online-tools/google-drive-direct-link-generator),
      [Dropbox or Onedrive](https://syncwithtech.blogspot.com/p/direct-download-link-generator.html).
-   * Replace link in the mobile app `???` file on your link.
-   * Run mobile app in Android Studio and enjoy!
+   * Replace link in the mobile app [`download_model.gradle`](02_mobile_app/app/download_model.gradle)
+     file on your link. Use `zipTree` for `*.zip` and `tarTree` for `*.tar.gz`.
+     ![Replace the link](02_mobile_app/data/2019.10.08_replace_the_link.jpg)
+   * Our model is not quantized, so set quantized to `false` in
+     [`DetectorActivity.java`](02_mobile_app/app/src/main/java/org/tensorflow/lite/examples/detection/DetectorActivity.java)
+     file
+     ![Set quantized to false](02_mobile_app/data/2019.10.10_replace_the_quantized.jpg)
+   * Delete `build` folder and clean `assets` folder.
+     Rebuild the project: `Build --> Make Project` then `Build --> Build Bundles --> Build APK`.
+   * Run mobile app (`Run --> Run 'app'`) in Android Studio and enjoy!
 
 Links:
-   * Article [Real-time face recognition](https://medium.com/@saidakbarp/real-time-face-recognition-tflite-3fb818ac039a)
+   * This article will help much: [Real-time face recognition](https://medium.com/@saidakbarp/real-time-face-recognition-tflite-3fb818ac039a)
    * Shareable link to file
      [`object_detection_demo_1.ipynb`](https://colab.research.google.com/drive/1OkqFXb1GSxi7oNkiGfGttSmhaob4ivFy).
      On GitHub `*.ipynb` documents usually do not open.
    * Shareable link to file
-     [`object_detection_demo_2.ipynb`]().
+     [`object_detection_demo_2.ipynb`](https://colab.research.google.com/drive/1sKb5rXrwiJTxzk0jZxAmpfIYUg0gj4Bw).
    * Original article: [How to configure Tensorflow object detection API with google colab](https://chamaradodandeniya.wordpress.com/2019/04/16/how-to-configure-google-colab-for-object-detection-using-tensorflow/).
    * Original article: [How to train an object detection model easy for free](https://medium.com/swlh/how-to-train-an-object-detection-model-easy-for-free-f388ff3663e).
    * [Object Detection Demo](https://github.com/tensorflow/models/blob/master/research/object_detection/object_detection_tutorial.ipynb) for the local computer (not Colab).

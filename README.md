@@ -96,5 +96,4 @@ Additional useful tools everybody Android developer should know about:
 
 ---
 ### <a name="object_detection_demo" />[Object detection demo](object_detection_demo)
-![Under construction](data/2019.09.25-under-construction-icon.png)
-**Under construction...**
+
