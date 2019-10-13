@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 import java.text.NumberFormat;
@@ -13,20 +14,33 @@ import java.util.Locale;
  * This app displays an order form to order coffee.
  */
 public class MainActivity extends AppCompatActivity {
-    static int quantity = 0;  // order quantity
-    static double price = 5;  // $5 for 1 cup of coffee
-    NumberFormat nf = NumberFormat.getCurrencyInstance(Locale.US);  // set dollars currency
+    static int cupsQuantity = 0;  // coffee cups cupsQuantity
+    static final double COFFEE_PRICE = 5.0;  // COFFEE_PRICE of 1 cup of coffee
 
     /**
      * This method is called when the widget is created.
-     *
-     * @param savedInstanceState - I don't know what is it :-)
      */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        display(quantity);  // display quantity again
+        display();  // display cups quantity again
+    }
+
+    /**
+     * Decrement number of cups by 1.
+     */
+    public void decrement(View view) {
+        cupsQuantity -= 1;
+        display();
+    }
+
+    /**
+     * Increment number of cups by 1.
+     */
+    public void increment(View view) {
+        cupsQuantity += 1;
+        display();
     }
 
     /**
@@ -35,26 +49,46 @@ public class MainActivity extends AppCompatActivity {
      * @param view - view of the main screen
      */
     public void submitOrder(View view) {
-        quantity += 1;
-        display(quantity);
+        // Display price when "Order" button is pressed
+        displayPrice(cupsQuantity * COFFEE_PRICE);
     }
 
     /**
-     * This method displays the given quantity value on the screen.
-     *
-     * @param number - number to display
+     * This method displays the given cups quantity value on the screen.
      */
-    private void display(int number) {
+    private void display() {
+        Button order = findViewById(R.id.button_order);  // order button
+        Button decrease = findViewById(R.id.button_decrease);  // decrease button
+        if(cupsQuantity <= 0) {  // order only positive cups of coffee
+            cupsQuantity = 0;  // cups quantity can be >= 0
+            order.setEnabled(false);  // disable button
+            decrease.setEnabled(false);  // disable button
+            order.setTextColor(getApplication().getResources().getColor(
+                    android.R.color.darker_gray));  // change button color
+            decrease.setTextColor(getApplication().getResources().getColor(
+                    android.R.color.darker_gray));  // change button color
+        } else {
+            order.setEnabled(true);  // enable button
+            decrease.setEnabled(true);  // enable button
+            // Return old button themes
+            order.setTextAppearance(getApplicationContext(), R.style.ButtonTheme);
+            decrease.setTextAppearance(getApplicationContext(), R.style.ButtonSquare);
+        }
+        // Update quantity number text view
         TextView quantityTextView = findViewById(R.id.text_quantity_number);
-        quantityTextView.setText(String.format(Locale.getDefault(), "%d", number));
-        displayPrice(number * price);  // display price after displaying quantity
+        quantityTextView.setText(String.format(Locale.getDefault(), "%d", cupsQuantity));
+        // Display price automatically after quantity of cups is changed
+        displayPrice(cupsQuantity * COFFEE_PRICE);
     }
 
     /**
-     * This method displays the given price on the screen.
+     * This method displays the total price on the screen.
+     *
+     * @param number - price to display
      */
     private void displayPrice(double number) {
-        TextView priceTextView = (TextView) findViewById(R.id.text_price_number);
+        TextView priceTextView = findViewById(R.id.text_price_number);
+        NumberFormat nf = NumberFormat.getCurrencyInstance(Locale.US);  // set dollars currency
         priceTextView.setText(nf.format(number));
     }
 }

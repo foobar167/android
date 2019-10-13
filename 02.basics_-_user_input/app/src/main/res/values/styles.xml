@@ -27,6 +27,11 @@
 
     <style name="ButtonTheme" parent="TextTheme">
         <item name="android:textColor">@android:color/black</item>
+        <item name="android:layout_height">48dp</item>
+    </style>
+
+    <style name="ButtonSquare" parent="ButtonTheme">
+        <item name="android:layout_width">48dp</item>
     </style>
 
 </resources>

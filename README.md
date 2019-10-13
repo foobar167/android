@@ -24,17 +24,19 @@ I selected some Google courses. Each course is in a separate catalog and designe
        Install Android Studio (lesson 3), create your first project for Android Studio IDE and make some basics GUI.
        <br/>The source code with examples is in the [01.basics_-_user_interface](01.basics_-_user_interface) directory.
        
-       ![Horizontal screenshot in emulator](data/2019.09.20_birthday_card-3.jpg)
+       ![Horizontal screenshot in emulator](01.basics_-_user_interface/data/2019.09.20_birthday_card-3.jpg)
 
    02. [Android Basics: User Input](https://www.udacity.com/course/android-basics-user-input--ud836)<br/>
        By the end of this course, you’ll be able to make an Android app with buttons and text fields
        that a user can interact with. This Java app allows user to fill out a form to order coffee.
        <br/>The source code with examples is in the [02.basics_-_user_input](02.basics_-_user_input) directory.
 
-       ![Under construction](data/2019.09.25-under-construction-icon.png)
-       **Under construction...**
+       ![Order coffee](02.basics_-_user_input/data/2019.10.13_order_coffee.jpg)
 
    03. [Android Basics: Multiscreen Apps](https://www.udacity.com/course/android-basics-multiscreen-apps--ud839)<br/>
+
+       ![Under construction](data/2019.09.25-under-construction-icon.png)
+       **Under construction...**
 
    04. [Android Basics: Networking](https://www.udacity.com/course/android-basics-networking--ud843)<br/>
 

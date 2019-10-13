@@ -10,7 +10,6 @@
         android:id="@+id/text_quantity"
         style="@style/TextTheme"
         android:text="@string/quantity"
-        app:layout_constraintBottom_toTopOf="@id/text_quantity_number"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -18,25 +17,38 @@
         android:id="@+id/text_quantity_number"
         style="@style/NumberTheme"
         android:text="@string/quantity_number"
-        app:layout_constraintBottom_toTopOf="@id/text_price"
+        app:layout_constraintLeft_toRightOf="@id/text_quantity"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_decrease"
+        style="@style/ButtonSquare"
+        android:onClick="decrement"
+        android:text="@string/decrement"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/text_quantity" />
+        app:layout_constraintTop_toBottomOf="@id/text_quantity_number"/>
+
+    <Button
+        android:id="@+id/button_increase"
+        style="@style/ButtonSquare"
+        android:onClick="increment"
+        android:text="@string/increment"
+        app:layout_constraintLeft_toRightOf="@id/button_decrease"
+        app:layout_constraintTop_toBottomOf="@id/text_quantity_number" />
 
     <TextView
         android:id="@+id/text_price"
         style="@style/TextTheme"
         android:text="@string/price"
-        app:layout_constraintBottom_toTopOf="@id/text_price_number"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/text_quantity_number" />
+        app:layout_constraintTop_toBottomOf="@id/button_decrease" />
 
     <TextView
         android:id="@+id/text_price_number"
         style="@style/NumberTheme"
         android:text="@string/price_number"
-        app:layout_constraintBottom_toTopOf="@id/button_order"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/text_price" />
+        app:layout_constraintLeft_toRightOf="@id/text_price"
+        app:layout_constraintTop_toBottomOf="@id/button_decrease" />
 
     <Button
         android:id="@+id/button_order"
