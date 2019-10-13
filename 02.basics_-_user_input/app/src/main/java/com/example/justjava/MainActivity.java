@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
      * Decrement number of cups by 1.
      */
     public void decrement(View view) {
-        cupsQuantity -= 1;
+        cupsQuantity--;  // decrease by 1
         display();
     }
 
@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
      * Increment number of cups by 1.
      */
     public void increment(View view) {
-        cupsQuantity += 1;
+        cupsQuantity++;  // increase by 1
         display();
     }
 
