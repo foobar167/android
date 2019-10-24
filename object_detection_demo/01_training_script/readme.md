@@ -4,6 +4,6 @@ Google Colab `*.ipynb` scripts to use an object detection API.
      [model zoo](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/detection_model_zoo.md).
    * [`demo_2.ipynb`](https://colab.research.google.com/drive/1sKb5rXrwiJTxzk0jZxAmpfIYUg0gj4Bw)
      describes the process of creating your own dataset and training (transfer learning) a new model
-     using Google Drive. Must have around 1.5 Gb of free space on your Google Drive.
+     using Google Drive. Must have around **1.5 Gb** of free space on your Google Drive.
    * [`demo_3.ipynb`](https://colab.research.google.com/drive/1Pdc3K4wjmSjQM6SEc0YeI_X7TK7KoDfO)
-     create and train (transfer learning) a new model totally inside Google Colab.
+     creates and trains (transfer learning) a new model totally inside Google Colab.
