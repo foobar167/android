@@ -1,12 +1,14 @@
-
+// Place your downloadable link to the model file here
 task downloadZipFile(type: Download) {
-    // Place your downloadable link to the model file here
-    src 'https://drive.google.com/uc?export=download&id=1-E5JmBQ_Zrpcq8NamMgViE0Md8bSsOY5'
+    // Downloadable link to 'nuts_model.tar.gz' file
+    src 'https://drive.google.com/uc?export=download&id=1O7FdqbrpyewaSCM_CPylP49-FcHzCTCS'
+    // Downloadable link to 'fruits_model.tar.gz' file
+    // src 'https://drive.google.com/uc?export=download&id=1-E5JmBQ_Zrpcq8NamMgViE0Md8bSsOY5'
+    // Default link
     // src 'http://storage.googleapis.com/download.tensorflow.org/models/tflite/coco_ssd_mobilenet_v1_1.0_quant_2018_06_29.zip'
     dest new File(buildDir, 'model-file')
     overwrite true
 }
-
 
 task downloadAndUnzipFile(dependsOn: downloadZipFile, type: Copy) {
     // Unzip *.zip model file
@@ -17,7 +19,6 @@ task downloadAndUnzipFile(dependsOn: downloadZipFile, type: Copy) {
 
     into project.ext.ASSET_DIR
 }
-
 
 task extractModels(type: Copy) {
     dependsOn downloadAndUnzipFile
