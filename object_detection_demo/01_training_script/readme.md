@@ -8,3 +8,5 @@ Google Colab `*.ipynb` scripts to use
      using Google Drive. Must have around **1.5 Gb** of free space on your Google Drive.
    * [`demo_3.ipynb`](https://colab.research.google.com/drive/1Pdc3K4wjmSjQM6SEc0YeI_X7TK7KoDfO)
      creates and trains (transfer learning) a new model totally inside Google Colab.
+   * [`demo_4.ipynb`](https://colab.research.google.com/drive/1zP61kpYJJLxvFfpVkZsv65Cbx0TZ1CM_)
+     works with user's dataset.
