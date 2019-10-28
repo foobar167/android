@@ -1,7 +1,9 @@
 // Place your downloadable link to the model file here
 task downloadZipFile(type: Download) {
+    // Downloadable link to 'fighter-tank.tar.gz'
+    src 'https://drive.google.com/uc?export=download&id=1x0JKysca0MLMw__Ec2tzUW2DzprUyC2V'
     // Downloadable link to 'nuts_model.tar.gz' file
-    src 'https://drive.google.com/uc?export=download&id=1O7FdqbrpyewaSCM_CPylP49-FcHzCTCS'
+    // src 'https://drive.google.com/uc?export=download&id=1O7FdqbrpyewaSCM_CPylP49-FcHzCTCS'
     // Downloadable link to 'fruits_model.tar.gz' file
     // src 'https://drive.google.com/uc?export=download&id=1-E5JmBQ_Zrpcq8NamMgViE0Md8bSsOY5'
     // Default link

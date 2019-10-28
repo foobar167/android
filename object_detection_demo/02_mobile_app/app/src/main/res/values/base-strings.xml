@@ -15,5 +15,5 @@
 -->
 
 <resources>
-    <string name="activity_name_detection">Fruit Detector</string>
+    <string name="activity_name_detection">Object Detector</string>
 </resources>
