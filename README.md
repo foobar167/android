@@ -45,6 +45,8 @@ I selected some Google courses. Each course is in a separate catalog and designe
    06. [Developing Android Apps](https://www.udacity.com/course/new-android-fundamentals--ud851)<br/>
 
    07. [Advanced Android App Development](https://www.udacity.com/course/advanced-android-app-development--ud855)<br/>
+   
+   08. [Advanced Android with Kotlin](https://www.udacity.com/course/advanced-android-with-kotlin--ud940)
 
 Videos:
    * [Best Android Studio Developer Course for 2019?](https://youtu.be/YnjNoRDi2bM) - 12 hours course.
