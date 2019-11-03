@@ -34,6 +34,9 @@ I selected some Google courses. Each course is in a separate catalog and designe
        ![Order coffee](02.basics_-_user_input/data/2019.10.13_order_coffee.jpg)
 
    03. [Android Basics: Multiscreen Apps](https://www.udacity.com/course/android-basics-multiscreen-apps--ud839)<br/>
+       Miwok language app. The app is a list of words and each word could have an English and Miwok
+       translation. You can take this app and modify it to teach any language.
+       <br/>The source code with examples is in the [03.basics_-_multiscreeen_apps](03.basics_-_multiscreeen_apps) directory.
 
        ![Under construction](data/2019.09.25-under-construction-icon.png)
        **Under construction...**
