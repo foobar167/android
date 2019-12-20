@@ -1,4 +1,6 @@
-### Detect objects with TensorFlow Object Detection API.
+### Object detection with TensorFlow Object Detection API.
+Application detects 3 kinds of objects: hazelnut, fig and date.
+
 ![Object detection](02_mobile_app/data/2019.10.10_object_detection-2.jpg)
 
 This is a **front-end** solution for **object detection** on Android.
