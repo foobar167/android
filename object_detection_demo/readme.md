@@ -1,9 +1,9 @@
 ### Detect objects with TensorFlow Object Detection API.
 ![Object detection](02_mobile_app/data/2019.10.10_object_detection-2.jpg)
 
-The [TensorFlow Object Detection API](https://github.com/tensorflow/models/tree/master/research/object_detection)
-is an open source framework built on top of TensorFlow that makes it easy to construct,
-train and deploy **object detection** models.
+This is a **front-end** solution for **object detection** on Android.
+For the **back-end** solution, please, visit my project for
+[image classification](https://github.com/foobar167/junkyard/tree/master/object_classifier) on Android.
 
 There are 2 main components:
    01. [model training scripts](01_training_script) -
@@ -12,6 +12,10 @@ There are 2 main components:
    02. [mobile app](02_mobile_app) -
        a mobile application that uses trained model in Android. It was copied from
        [TensorFlow Lite object detection Android Demo](https://github.com/tensorflow/examples/tree/master/lite/examples/object_detection/android).
+
+[TensorFlow Object Detection API](https://github.com/tensorflow/models/tree/master/research/object_detection)
+is an open source framework built on top of TensorFlow that makes it easy to construct,
+train and deploy **object detection** models.
 
 To run model on your mobile phone:
    * Take existing pre-trained model from the
