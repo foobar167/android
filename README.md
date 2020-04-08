@@ -32,10 +32,7 @@ I selected some Google courses. Each course is in a separate catalog and designe
        that a user can interact with. This Java app allows user to fill out a form to order coffee.
        <br/>The source code with examples is in the [02.basics_-_user_input](02.basics_-_user_input) directory.
 
-       ![Order coffee](02.basics_-_user_input/data/2019.10.13_order_coffee.jpg)
-
-       ![Under construction](data/2019.09.25-under-construction-icon.png)
-       **Under construction...**
+       ![Order coffee](02.basics_-_user_input/data/2020.04.08_order_coffee-3.jpg)
 
    03. [Android Basics: Multiscreen Apps](https://www.udacity.com/course/android-basics-multiscreen-apps--ud839)<br/>
        Miwok language app. The app is a list of words and each word could have an English and Miwok
@@ -110,6 +107,7 @@ Additional useful tools everybody Android developer should know about:
 ![Object detection](object_detection_demo/02_mobile_app/data/2019.10.10_object_detection-1.jpg)
 
 There are 2 main components:
+
    01. [model training scripts](object_detection_demo/01_training_script) -
        Google Colab `*.ipynb` scripts to use
        [TensorFlow object detection API](https://github.com/tensorflow/models/tree/master/research/object_detection).
