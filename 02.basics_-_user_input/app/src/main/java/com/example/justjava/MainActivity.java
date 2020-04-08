@@ -16,6 +16,7 @@ import java.util.Locale;
 public class MainActivity extends AppCompatActivity {
     static int cupsQuantity = 0;  // coffee cups cupsQuantity
     static final double COFFEE_PRICE = 5.0;  // COFFEE_PRICE of 1 cup of coffee
+    static String orderMessage = "";  // order message
 
     /**
      * This method is called when the widget is created.
@@ -32,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
      */
     public void decrement(View view) {
         cupsQuantity--;  // decrease by 1
+        orderMessage = "";  // set empty order message
         display();
     }
 
@@ -40,6 +42,7 @@ public class MainActivity extends AppCompatActivity {
      */
     public void increment(View view) {
         cupsQuantity++;  // increase by 1
+        orderMessage = "";  // set empty order message
         display();
     }
 
@@ -49,6 +52,7 @@ public class MainActivity extends AppCompatActivity {
      * @param view - view of the main screen
      */
     public void submitOrder(View view) {
+        orderMessage = "Thank you!";  // set order message to "Thank you!"
         // Display price when "Order" button is pressed
         displayPrice(cupsQuantity * COFFEE_PRICE);
     }
@@ -67,7 +71,7 @@ public class MainActivity extends AppCompatActivity {
                     android.R.color.darker_gray));  // change button color
             decrease.setTextColor(getApplication().getResources().getColor(
                     android.R.color.darker_gray));  // change button color
-        } else {
+        } else {  // cupsQuantity > 0
             order.setEnabled(true);  // enable button
             decrease.setEnabled(true);  // enable button
             // Return old button themes
@@ -90,5 +94,8 @@ public class MainActivity extends AppCompatActivity {
         TextView priceTextView = findViewById(R.id.text_price_number);
         NumberFormat nf = NumberFormat.getCurrencyInstance(Locale.US);  // set dollars currency
         priceTextView.setText(nf.format(number));
+        // Set order message
+        TextView orderTextView = findViewById(R.id.text_order_message);
+        orderTextView.setText(orderMessage);
     }
 }

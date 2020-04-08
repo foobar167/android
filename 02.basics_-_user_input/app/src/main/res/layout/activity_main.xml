@@ -58,4 +58,11 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@id/text_price_number" />
 
+    <TextView
+        android:id="@+id/text_order_message"
+        style="@style/TextTheme"
+        android:text="@string/order_message"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button_order" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
