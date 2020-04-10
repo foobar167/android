@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     style="@style/AppTheme"
@@ -26,7 +25,7 @@
         android:onClick="decrement"
         android:text="@string/decrement"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/text_quantity_number"/>
+        app:layout_constraintTop_toBottomOf="@id/text_quantity_number" />
 
     <Button
         android:id="@+id/button_increase"
@@ -58,10 +57,20 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@id/text_price_number" />
 
+    <Button
+        android:id="@+id/button_cancel"
+        style="@style/ButtonTheme"
+        android:onClick="cancelOrder"
+        android:text="@string/cancel"
+        app:layout_constraintLeft_toRightOf="@id/button_order"
+        app:layout_constraintTop_toBottomOf="@id/text_price_number" />
+
     <TextView
         android:id="@+id/text_order_message"
         style="@style/TextTheme"
         android:text="@string/order_message"
+        android:textAllCaps="false"
+        android:textColor="@android:color/holo_red_dark"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@id/button_order" />
 

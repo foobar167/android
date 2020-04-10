@@ -7,5 +7,6 @@
     <string name="price">Price:</string>
     <string name="price_number">0</string>
     <string name="order">Order</string>
+    <string name="cancel">Cancel</string>
     <string name="order_message">""</string>
 </resources>
