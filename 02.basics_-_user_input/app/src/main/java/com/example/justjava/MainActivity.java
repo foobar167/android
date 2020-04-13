@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
     static int cupsQuantity = 0;  // coffee cups cupsQuantity
     static final double COFFEE_PRICE = 5.0;  // COFFEE_PRICE of 1 cup of coffee
     static String orderMessage = "";  // order message
+    static String totalPrice = "";  // total price for coffee
 
     /**
      * This method is called when the widget is created.
@@ -52,17 +53,25 @@ public class MainActivity extends AppCompatActivity {
      * @param view - view of the main screen
      */
     public void submitOrder(View view) {
-        NumberFormat nf = NumberFormat.getCurrencyInstance(Locale.US);  // set dollars currency
+        orderMessage = getOrderMessage();
+        cupsQuantity = 0;
+        display();
+    }
+
+    /**
+     * Creates the message output for the order.
+     *
+     * @return the message
+     */
+    private String getOrderMessage() {
         String cups = " cup ";
         if (cupsQuantity > 1) {
             cups = " cups ";
         }
-        orderMessage = "Ordered " + cupsQuantity +
-                cups + "of coffee for " +
-                nf.format(cupsQuantity * COFFEE_PRICE) +
-                ". Thank you!";  // set order message
-        cupsQuantity = 0;
-        display();
+        return "Name: FooBar167" +
+               "\nQuantity: " + cupsQuantity + cups + "of coffee" +
+               "\nTotal price: " + totalPrice +
+               "\nThank you!";  // set order message
     }
 
     /**
@@ -108,10 +117,20 @@ public class MainActivity extends AppCompatActivity {
         quantityTextView.setText(String.format(Locale.getDefault(), "%d", cupsQuantity));
         // Display price automatically after quantity of cups is changed
         TextView priceTextView = findViewById(R.id.text_price_number);
-        NumberFormat nf = NumberFormat.getCurrencyInstance(Locale.US);  // set dollars currency
-        priceTextView.setText(nf.format(cupsQuantity * COFFEE_PRICE));
+        totalPrice = calculatePrice(cupsQuantity);
+        priceTextView.setText(totalPrice);
         // Set order message
         TextView orderTextView = findViewById(R.id.text_order_message);
         orderTextView.setText(orderMessage);
+    }
+
+    /**
+     * Calculates the price of the order based on the current quantity.
+     *
+     * @return the price
+     */
+    private String calculatePrice(int quantity) {
+        NumberFormat nf = NumberFormat.getCurrencyInstance(Locale.US);  // set dollars currency
+        return nf.format(cupsQuantity * COFFEE_PRICE);
     }
 }
