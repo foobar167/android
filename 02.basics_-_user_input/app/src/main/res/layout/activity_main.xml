@@ -5,19 +5,26 @@
     style="@style/AppTheme"
     tools:context=".MainActivity">
 
+    <CheckBox
+        android:id="@+id/whipped_cream_checkbox"
+        style="@style/TextTheme2"
+        android:text="@string/whipped_cream"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
         android:id="@+id/text_quantity"
         style="@style/TextTheme"
         android:text="@string/quantity"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@id/whipped_cream_checkbox" />
 
     <TextView
         android:id="@+id/text_quantity_number"
         style="@style/NumberTheme"
         android:text="@string/quantity_number"
         app:layout_constraintLeft_toRightOf="@id/text_quantity"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@id/whipped_cream_checkbox" />
 
     <Button
         android:id="@+id/button_decrease"
@@ -67,9 +74,8 @@
 
     <TextView
         android:id="@+id/text_order_message"
-        style="@style/TextTheme"
+        style="@style/TextTheme2"
         android:text="@string/order_message"
-        android:textAllCaps="false"
         android:textColor="@android:color/holo_red_dark"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@id/button_order" />
