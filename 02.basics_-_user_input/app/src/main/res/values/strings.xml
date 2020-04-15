@@ -1,6 +1,9 @@
 <resources>
     <string name="app_name">Coffee App</string>
+    <string name="name">Enter your name here</string>
+    <string name="toppings">Toppings</string>
     <string name="whipped_cream">Whipped cream</string>
+    <string name="chocolate">Chocolate</string>
     <string name="quantity">Quantity:</string>
     <string name="quantity_number">0</string>
     <string name="decrement">−</string>

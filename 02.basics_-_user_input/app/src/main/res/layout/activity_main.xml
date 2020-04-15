@@ -1,83 +1,120 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     style="@style/AppTheme"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="0dp">
 
-    <CheckBox
-        android:id="@+id/whipped_cream_checkbox"
-        style="@style/TextTheme2"
-        android:text="@string/whipped_cream"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
 
-    <TextView
-        android:id="@+id/text_quantity"
-        style="@style/TextTheme"
-        android:text="@string/quantity"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/whipped_cream_checkbox" />
+        <EditText
+            android:id="@+id/name_text"
+            style="@style/TextTheme2"
+            android:layout_width="fill_parent"
+            android:hint="@string/name"
+            android:inputType="textNoSuggestions"
+            android:importantForAutofill="no"
+            android:background="@android:color/transparent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/text_quantity_number"
-        style="@style/NumberTheme"
-        android:text="@string/quantity_number"
-        app:layout_constraintLeft_toRightOf="@id/text_quantity"
-        app:layout_constraintTop_toBottomOf="@id/whipped_cream_checkbox" />
+        <TextView
+            android:id="@+id/text_toppings"
+            style="@style/TextTheme"
+            android:text="@string/toppings"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/name_text" />
 
-    <Button
-        android:id="@+id/button_decrease"
-        style="@style/ButtonSquare"
-        android:onClick="decrement"
-        android:text="@string/decrement"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/text_quantity_number" />
+        <CheckBox
+            android:id="@+id/whipped_cream_checkbox"
+            style="@style/TextTheme2"
+            android:text="@string/whipped_cream"
+            android:onClick="addWhippedCream"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_toppings" />
 
-    <Button
-        android:id="@+id/button_increase"
-        style="@style/ButtonSquare"
-        android:onClick="increment"
-        android:text="@string/increment"
-        app:layout_constraintLeft_toRightOf="@id/button_decrease"
-        app:layout_constraintTop_toBottomOf="@id/text_quantity_number" />
+        <CheckBox
+            android:id="@+id/chocolate_checkbox"
+            style="@style/TextTheme2"
+            android:text="@string/chocolate"
+            android:onClick="addChocolate"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/whipped_cream_checkbox" />
 
-    <TextView
-        android:id="@+id/text_price"
-        style="@style/TextTheme"
-        android:text="@string/price"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/button_decrease" />
+        <TextView
+            android:id="@+id/text_quantity"
+            style="@style/TextTheme"
+            android:text="@string/quantity"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/chocolate_checkbox" />
 
-    <TextView
-        android:id="@+id/text_price_number"
-        style="@style/NumberTheme"
-        android:text="@string/price_number"
-        app:layout_constraintLeft_toRightOf="@id/text_price"
-        app:layout_constraintTop_toBottomOf="@id/button_decrease" />
+        <TextView
+            android:id="@+id/text_quantity_number"
+            style="@style/NumberTheme"
+            android:text="@string/quantity_number"
+            app:layout_constraintLeft_toRightOf="@id/text_quantity"
+            app:layout_constraintTop_toBottomOf="@id/chocolate_checkbox" />
 
-    <Button
-        android:id="@+id/button_order"
-        style="@style/ButtonTheme"
-        android:onClick="submitOrder"
-        android:text="@string/order"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/text_price_number" />
+        <Button
+            android:id="@+id/button_decrease"
+            style="@style/ButtonSquare"
+            android:onClick="decrement"
+            android:text="@string/decrement"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_quantity_number" />
 
-    <Button
-        android:id="@+id/button_cancel"
-        style="@style/ButtonTheme"
-        android:onClick="cancelOrder"
-        android:text="@string/cancel"
-        app:layout_constraintLeft_toRightOf="@id/button_order"
-        app:layout_constraintTop_toBottomOf="@id/text_price_number" />
+        <Button
+            android:id="@+id/button_increase"
+            style="@style/ButtonSquare"
+            android:onClick="increment"
+            android:text="@string/increment"
+            app:layout_constraintLeft_toRightOf="@id/button_decrease"
+            app:layout_constraintTop_toBottomOf="@id/text_quantity_number" />
 
-    <TextView
-        android:id="@+id/text_order_message"
-        style="@style/TextTheme2"
-        android:text="@string/order_message"
-        android:textColor="@android:color/holo_red_dark"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/button_order" />
+        <TextView
+            android:id="@+id/text_price"
+            style="@style/TextTheme"
+            android:text="@string/price"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/button_decrease" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView
+            android:id="@+id/text_price_number"
+            style="@style/NumberTheme"
+            android:text="@string/price_number"
+            app:layout_constraintLeft_toRightOf="@id/text_price"
+            app:layout_constraintTop_toBottomOf="@id/button_decrease" />
+
+        <Button
+            android:id="@+id/button_order"
+            style="@style/ButtonTheme"
+            android:onClick="submitOrder"
+            android:text="@string/order"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_price_number" />
+
+        <Button
+            android:id="@+id/button_cancel"
+            style="@style/ButtonTheme"
+            android:onClick="cancelOrder"
+            android:text="@string/cancel"
+            app:layout_constraintLeft_toRightOf="@id/button_order"
+            app:layout_constraintTop_toBottomOf="@id/text_price_number" />
+
+        <TextView
+            android:id="@+id/text_order_message"
+            style="@style/TextTheme2"
+            android:text="@string/order_message"
+            android:textColor="@android:color/holo_red_dark"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/button_order" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
