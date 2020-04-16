@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.3">
+    <string name="app_name">Кофе-машина</string>
+    <string name="name">Введите ваше имя</string>
+    <string name="toppings">Начинка</string>
+    <string name="whipped_cream">Взбитые сливки</string>
+    <string name="chocolate">Шоколад</string>
+    <string name="quantity">Количество:</string>
+    <string name="price">Цена:</string>
+    <string name="order">Заказ</string>
+    <string name="cancel">Отмена</string>
+    <string name="cup_singular">чашка</string>
+    <string name="anonymous">Вас</string>
+    <string name="cups_plural">чашек</string>
+    <string name="coffee_for">Кофе для</string>
+    <string name="name_word">Имя: <xliff:g example="Оля" id="name">%s</xliff:g></string>
+    <string name="quantity_word">Количество</string>
+    <string name="of_coffee">кофе</string>
+    <string name="total_price">Итоговая цена</string>
+    <string name="whipped_cream_words">Взбитые сливки</string>
+    <string name="chocolate_word">Шоколад</string>
+    <string name="thank_you">Спасибо!</string>
+</resources>

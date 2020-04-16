@@ -1,16 +1,38 @@
-<resources>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.3">
     <string name="app_name">Coffee App</string>
     <string name="name">Enter your name here</string>
     <string name="toppings">Toppings</string>
     <string name="whipped_cream">Whipped cream</string>
     <string name="chocolate">Chocolate</string>
     <string name="quantity">Quantity:</string>
-    <string name="quantity_number">0</string>
-    <string name="decrement">−</string>
-    <string name="increment">+</string>
+    <string name="quantity_number" translatable="false">0</string>
+    <string name="decrement" translatable="false">−</string>
+    <string name="increment" translatable="false">+</string>
     <string name="price">Price:</string>
-    <string name="price_number">0</string>
+    <string name="price_number" translatable="false">0</string>
     <string name="order">Order</string>
     <string name="cancel">Cancel</string>
-    <string name="order_message">""</string>
+    <string name="order_message" translatable="false">""</string>
+    <!-- Name if user did not enter his/her name [CHAR LIMIT=NONE] -->
+    <string name="anonymous">You</string>
+    <!-- Singular cup name [CHAR LIMIT=20] -->
+    <string name="cup_singular">cup</string>
+    <!-- Plural cups name [CHAR LIMIT=20] -->
+    <string name="cups_plural">cups</string>
+    <!-- "Coffee for" phrase [CHAR LIMIT=20] -->
+    <string name="coffee_for">Coffee for</string>
+    <!-- "Name" word [CHAR LIMIT=20] -->
+    <string name="name_word">Name: <xliff:g example="Amy" id="name">%s</xliff:g></string>
+    <!-- "Quantity" word [CHAR LIMIT=20] -->
+    <string name="quantity_word">Quantity</string>
+    <!-- "of coffee" word [CHAR LIMIT=20] -->
+    <string name="of_coffee">of coffee</string>
+    <!-- "Total price" words [CHAR LIMIT=20] -->
+    <string name="total_price">Total price</string>
+    <!-- "Whipped cream" words [CHAR LIMIT=20] -->
+    <string name="whipped_cream_words">Whipped cream</string>
+    <!-- "Chocolate" word [CHAR LIMIT=20] -->
+    <string name="chocolate_word">Chocolate</string>
+    <!-- "Thank you!" words [CHAR LIMIT=NONE] -->
+    <string name="thank_you">Thank you!</string>
 </resources>

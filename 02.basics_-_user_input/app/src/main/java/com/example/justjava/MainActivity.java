@@ -2,6 +2,8 @@ package com.example.justjava;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.view.WindowManager;
@@ -82,7 +84,17 @@ public class MainActivity extends AppCompatActivity {
      * @param view - view of the main screen
      */
     public void submitOrder(View view) {
-        orderMessage = getOrderMessage();
+        // Compose e-mail
+        String[] text = getOrderMessage();
+        Intent intent = new Intent(Intent.ACTION_SENDTO);
+        intent.setData(Uri.parse("mailto:")); // only email apps should handle this
+        intent.putExtra(Intent.EXTRA_SUBJECT, text[0]);
+        intent.putExtra(Intent.EXTRA_TEXT, text[1]);
+        if (intent.resolveActivity(getPackageManager()) != null) {
+            startActivity(intent);
+        }
+        // Finish the order
+        orderMessage = text[1];
         setZero();
         display();
     }
@@ -98,20 +110,29 @@ public class MainActivity extends AppCompatActivity {
      *
      * @return the message
      */
-    private String getOrderMessage() {
+    private String[] getOrderMessage() {
+        String[] text = new String[2];
+        // Get user name
         EditText name_text = findViewById(R.id.name_text);
         String name = name_text.getText().toString();
-
-        String cups = " cup ";
-        if (cupsQuantity > 1) {
-            cups = " cups ";
+        if (name.equals("")) {
+            name = getString(R.string.anonymous);
         }
-        return "Name: " + name +
-               "\nQuantity: " + cupsQuantity + cups + "of coffee" +
-               "\nTotal price: " + totalPrice +
-               "\nWhipped cream: " + hasWhippedCream +
-               "\nChocolate: " + hasChocolate +
-               "\nThank you!";  // set order message
+        // Get cup(s) word
+        String cups = " " + getString(R.string.cup_singular) + " ";
+        if (cupsQuantity > 1) {
+            cups = " " + getString(R.string.cups_plural) + " ";
+        }
+        // Set text strings
+        text[0] = getString(R.string.coffee_for) + " " + name;
+        text[1] = getString(R.string.name_word, name) +
+                "\n" + getString(R.string.quantity_word) + ": " +
+                cupsQuantity + cups + getString(R.string.of_coffee) +
+                "\n" + getString(R.string.total_price) + ": " + totalPrice +
+                "\n" + getString(R.string.whipped_cream_words) + ": " + hasWhippedCream +
+                "\n" + getString(R.string.chocolate_word) + ": " + hasChocolate +
+                "\n" + getString(R.string.thank_you);  // set order message
+        return text;
     }
 
     /**
@@ -185,7 +206,6 @@ public class MainActivity extends AppCompatActivity {
      * @return the price
      */
     private String calculatePrice(int quantity) {
-        NumberFormat nf = NumberFormat.getCurrencyInstance(Locale.US);  // set dollars currency
         double oneCupPrice = COFFEE_PRICE;
         if (hasWhippedCream) {
             oneCupPrice += CREAM_PRICE;
@@ -193,6 +213,6 @@ public class MainActivity extends AppCompatActivity {
         if (hasChocolate) {
             oneCupPrice += CHOCOLATE_PRICE;
         }
-        return nf.format(cupsQuantity * oneCupPrice);
+        return NumberFormat.getCurrencyInstance().format(cupsQuantity * oneCupPrice);
     }
 }
